@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Birthday Wishes</title>
+    <style>
+        body {
+            background-color: #2E7D32;
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+        
+        h1 {
+            color: #FFFFFF;
+            font-size: 48px;
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+        
+        .block {
+            background-color: #D81B60;
+            border-radius: 10px;
+            box-shadow: 5px 5px #880E4F;
+            color: #fff;
+            font-size: 24px;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out;
+        }
+        
+        .block:hover {
+            transform: scale(1.1);
+        }
+        
+        #message {
+            background-color: #D81B60;
+            border-radius: 10px;
+            box-shadow: 5px 5px #880E4F;
+            color: #fff;
+            font-size: 24px;
+            margin: 0 auto;
+            max-width: 80%;
+            padding: 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        
+        #footer {
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Birthday Wishes for Subathiradevi Vinothraj</h1>
+    <div class="container">
+        <div class="block" onclick="showMessage('Subathiradevi Vinothraj is a kind and friendly college lecturer who has made a positive impact on many students.')">
+            <p>Click here to see a message about Subathiradevi Vinothraj</p>
+        </div>
+        <div class="block" onclick="showMessage('Happy Birthday! May your day be as wonderful as you are!')">
+            <p>Click here to see a birthday wish</p>
+        </div>
+        <div class="block" onclick="showMessage('Wishing you all the happiness and joy on your special day!')">
+            <p>Click here to see another birthday wish </p>
+        </div>
+    </div>
+    <div class="message" id="message"></div>
+    <div id="footer">By Yours, dear student K. Gokulappadurai,<a href="https://drive.google.com/file/d/1GdTxjoS8UVd6z6L5od4Cww-C0ErvtLHo/view">Click to view a moment of you mam Google</a>>
+    </div>
+    <script>
+        function showMessage(message) {
+            document.getElementById("message").innerHTML = message;
+        }
+    </script>
+</body>
+</html>
